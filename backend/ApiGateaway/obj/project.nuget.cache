@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "uyALkb3lJ1w=",
+  "success": true,
+  "projectFilePath": "C:\\vscodefiles\\e-commerce\\backend\\ApiGateaway\\ApiGateaway.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\aekge\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.4\\microsoft.aspnetcore.openapi.9.0.4.nupkg.sha512",
+    "C:\\Users\\aekge\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}

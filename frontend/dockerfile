@@ -1,0 +1,14 @@
+# Stage 1: Build
+FROM node:18 AS build
+WORKDIR /app
+COPY . .
+RUN npm install
+RUN npm run build
+
+# Stage 2: Serve with Vite Preview
+FROM node:18
+WORKDIR /app
+COPY --from=build /app /app
+RUN npm install -g vite
+EXPOSE 5173
+CMD ["vite", "preview", "--host", "--port", "5173"]

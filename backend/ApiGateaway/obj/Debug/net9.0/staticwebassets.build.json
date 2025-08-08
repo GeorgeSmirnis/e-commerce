@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "9b6uUjoePcTL9NNNOGrzgqIiYJ3BHab9rHjslqRI5Uc=",
+  "Source": "ApiGateaway",
+  "BasePath": "_content/ApiGateaway",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
