@@ -59,9 +59,9 @@ Make sure you have the following installed:
 
 1. Clone the repository:
    
-   git clone https://github.com/GeorgeSmirnis/e-commerce.git
-   cd e-commerce
-   docker compose up --build
+   - git clone https://github.com/GeorgeSmirnis/e-commerce.git
+   - cd e-commerce
+   - docker compose up --build
    
 If not all the sesrvices start then you might need to restart them manually via the docker UI or docker compose restart userservice productservice
 
