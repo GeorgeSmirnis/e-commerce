@@ -37,11 +37,12 @@ const Login: React.FC = () => {
       });
 
       const data = response.data;
-      localStorage.setItem(ACCESS_TOKEN, data.token);
-      localStorage.setItem('username', data.username);
-      localStorage.setItem('role', data.role);
-      localStorage.setItem('id', data.id);
-      localStorage.setItem('storeName', data.storeName);
+      const storage = form.rememberMe ? localStorage : sessionStorage;
+      storage.setItem(ACCESS_TOKEN, data.token);
+      storage.setItem('username', data.username);
+      storage.setItem('role', data.role);
+      storage.setItem('id', data.id);
+      storage.setItem('storeName', data.storeName);
 
       navigate('/');
     } catch (error) {

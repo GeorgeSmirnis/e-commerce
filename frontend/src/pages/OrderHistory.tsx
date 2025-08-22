@@ -40,7 +40,7 @@ const OrderHistory: React.FC = () => {
   if (loading) return <div className="container py-5">Loading...</div>;
 
   if (orders.length === 0) {
-    return <div className="container py-5">No orders found for user: {id}</div>;
+    return <div className="container py-5">No orders found!!!</div>;
   }
 
   return (

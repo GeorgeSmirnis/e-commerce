@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import api from "../api";
 import { ACCESS_TOKEN } from "../constants";
+import { useNavigate } from 'react-router-dom';
 
 const categories = ["Clothes", "Electronics", "Books", "Toys", "Beauty"];
 
@@ -13,6 +14,7 @@ const NewProduct: React.FC = () => {
   const [image, setImage] = useState("");
   const [category, setCategory] = useState(categories[0]); // default to first category
 
+  const navigate = useNavigate();
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -35,8 +37,8 @@ const NewProduct: React.FC = () => {
       
     } catch (error) {
       console.error("Error creating product:", error);
-      
     }
+    navigate('/');
   };
 
   return (
