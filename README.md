@@ -8,6 +8,7 @@ It demonstrates authentication, product management, ordering, and notifications 
 - Requires **.NET 9** installed.  
 - Backend is the main focus – the frontend may contain incomplete or placeholder details.  
 - Sometimes **UserService** and **ProductService** may shut down unexpectedly. If that happens, you may need to restart them manually with `docker compose restart userservice productservice`.
+- No pre-seeding, you create a user from the beggining a product and an order.
 
 ---
 
